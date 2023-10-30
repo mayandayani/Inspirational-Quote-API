@@ -15,9 +15,10 @@ async function getapi(url)
     console.log(data);
 }
 
-getapi(api_url); 
-
-function updateQuote() {
-    document.getElementById('quote').innerHTML = 'getapi(api_url)';
+async function updateQuote() {
+    const quotes = await getapi(api_url);
+    document.getElementById('quote').innerHTML = quotes[0].text;
 }
 
+getapi(api_url); 
+updateQuote();
