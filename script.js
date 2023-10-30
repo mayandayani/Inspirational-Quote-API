@@ -24,3 +24,4 @@ async function updateQuote() {
 console.log(getapi());
 
 console.log(updateQuote());
+
