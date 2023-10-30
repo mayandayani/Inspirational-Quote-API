@@ -12,13 +12,10 @@ async function getapi(url)
 {
     const response = await fetch(url);
     var data = await response.json();
-    console.log(data);
+    return data;
 }
 
 async function updateQuote() {
     const quotes = await getapi(api_url);
     document.getElementById('quote').innerHTML = quotes[0].text;
 }
-
-getapi(api_url); 
-updateQuote();
