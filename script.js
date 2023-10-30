@@ -17,5 +17,6 @@ async function getapi(url)
 
 async function updateQuote() {
     const quotes = await getapi(api_url);
+    console.log(quotes);
     document.getElementById('quote').innerHTML = quotes[0].text;
 }
