@@ -19,23 +19,15 @@ async function updateQuote() {
     const quotes = await getapi(api_url);
     console.log(quotes);
 
-    // Get a reference to the HTML element where you want to display the quotes
     var container = document.getElementById('quote');
 
-    // Remove all existing children of the container
     while (container.firstChild) {
         container.removeChild(container.firstChild);
     }
 
-    // Iterate over the quotes
     for (var i = 0; i < quotes.length; i++) {
-        // Create a new div element for each quote
         var div = document.createElement('div');
-
-        // Set the text of the div to the quote text and author
         div.textContent = quotes[i].q + ' - ' + quotes[i].a;
-
-        // Append the div to the container
         container.appendChild(div);
     }
 }
