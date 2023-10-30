@@ -6,6 +6,8 @@ function changeColor() {
     console.log(changeColor)
 }
 
+const quote = doucmen.querySelector("#quote");
+
 const api_url ="https://zenquotes.io/api/quotes/";
 
 async function getapi(url)
