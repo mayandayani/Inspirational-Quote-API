@@ -6,7 +6,7 @@ function changeColor() {
     console.log(changeColor)
 }
 
-const api_url ="https://zenquotes.io/api/today";
+const api_url ="https://zenquotes.io/api/today/?option1=true";
 
 async function getapi(url)
 {
