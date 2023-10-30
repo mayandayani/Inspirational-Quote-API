@@ -17,4 +17,7 @@ async function getapi(url)
 
 getapi(api_url); 
 
-console.log(getapi(api_url))
+function updateQuote() {
+    document.getElementById('quote').innerHTML = 'getapi(api_url)';
+}
+
