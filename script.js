@@ -16,3 +16,5 @@ async function getapi(url)
 }
 
 getapi(api_url); 
+
+console.log(getapi(api_url))
