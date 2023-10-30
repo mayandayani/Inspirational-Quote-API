@@ -1,0 +1,38 @@
+* {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+  }
+  
+  h1 {
+    background-color: black;
+  }
+  
+  .Boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30em;
+    margin-right: 30em;
+    padding-top: 5em;
+    padding-bottom: 3em;
+  }
+  
+  .Quotes {
+    margin-top: 25em;
+  }
+  
+  .Logo {
+    margin-top: 35em;
+    margin-left: 90em;
+    margin-right: 3em;
+    border: solid;
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    background-color: black;
+    color: white;
+  }
+  
