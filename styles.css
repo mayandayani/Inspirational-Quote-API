@@ -36,5 +36,5 @@
   }
   
 .quote-box {
-  padding: 5%
+  border: solid red 5px;
 }
