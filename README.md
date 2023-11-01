@@ -1,2 +1,1 @@
 # Inspirational-Quote-API
-
