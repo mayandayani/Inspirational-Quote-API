@@ -6,47 +6,20 @@ function changeColor() {
     console.log(changeColor)
 }
 
+//Defining the html elements as variables
 const quote = document.querySelector("#quote");
 const author = document.querySelector("#author");
 const btn = document.querySelector("#btn");
 
+//Event listener for a click on the button, which grabs the function getQuote
 btn.addEventListener("click", getQuote);
 
+//Fetches the data from the URL, turns the data into a JSON format. Puts the content data into Quotes and Author data into Author
 function getQuote() {
     fetch("https://quotable.io/random")
-    .then(res => console.log(res))
+    .then(res => res.json())
+    .then(data => {
+        quote.innerHTML = `"${data.content}"`;
+        author.innerHTML = data.author;
+    })
 }
-
-/*
-
-// First attempt at creating a fetch API to get the quotes
-
-const api_url ="https://quotable.io/random";
-
-async function getapi(url)
-{
-    const response = await fetch(url);
-    var data = await response.json();
-    return data;
-}
-
-async function updateQuote() {
-    const quotes = await getapi(api_url);
-    console.log(quotes);
-
-    var container = document.getElementById('quote');
-
-    while (container.firstChild) {
-        container.removeChild(container.firstChild);
-    }
-
-    for (var i = 0; i < quotes.length; i++) {
-        var div = document.createElement('div');
-        div.textContent = quotes[i].q + ' - ' + quotes[i].a;
-        container.appendChild(div);
-    }
-}
-
-updateQuote();
-
-*/
