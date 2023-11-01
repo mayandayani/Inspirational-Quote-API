@@ -10,7 +10,7 @@ const quote = document.querySelector("#quote");
 const author = document.querySelector("#author");
 const btn = document.querySelector("#btn");
 
-btn.addEventListner("click", getQuote);
+btn.addEventListener("click", getQuote);
 
 function getQuote() {
     fetch("https://quotable.io/random")
