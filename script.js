@@ -17,11 +17,12 @@ function getQuote() {
     .then(res => console.log(res))
 }
 
-const api_url ="https://quotable.io/random";
-
+/*
 
 // First attempt at creating a fetch API to get the quotes
-/*
+
+const api_url ="https://quotable.io/random";
+
 async function getapi(url)
 {
     const response = await fetch(url);
