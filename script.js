@@ -6,10 +6,22 @@ function changeColor() {
     console.log(changeColor)
 }
 
-const quote = doucmen.querySelector("#quote");
+const quote = doucment.querySelector("#quote");
+const author = doucment.querySelector("#author");
+const btn = doucment.querySelector("#btn");
 
-const api_url ="https://zenquotes.io/api/quotes/";
+btn.addEventListner("click", getQuote);
 
+function getQuote() {
+    fetch("https://quotable.io/random")
+    .then(res => console.log(res))
+}
+
+const api_url ="https://quotable.io/random";
+
+
+// First attempt at creating a fetch API to get the quotes
+/*
 async function getapi(url)
 {
     const response = await fetch(url);
@@ -35,3 +47,5 @@ async function updateQuote() {
 }
 
 updateQuote();
+
+*/
