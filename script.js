@@ -6,9 +6,9 @@ function changeColor() {
     console.log(changeColor)
 }
 
-const quote = doucment.querySelector("#quote");
-const author = doucment.querySelector("#author");
-const btn = doucment.querySelector("#btn");
+const quote = document.querySelector("#quote");
+const author = document.querySelector("#author");
+const btn = document.querySelector("#btn");
 
 btn.addEventListner("click", getQuote);
 
