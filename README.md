@@ -2,4 +2,4 @@
 
 Created to understand how API works
 
-https://mayandayani.github.io/Inspirational-Quote-API//?version=f36af92
+https://mayandayani.github.io/Inspirational-Quote-API/
