@@ -1,7 +1,7 @@
 * {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-  font-size: 16px;
+  font-size: 46px;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 .quote-box {
   background-color: rgb(104, 104, 104);
   box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
-  max-width: 400px;
+  max-width: 700px;
   margin: auto;
   color: white;
 }
